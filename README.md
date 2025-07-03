@@ -25,15 +25,15 @@ We use four different companies because they belong to the same sector: Technolo
 **Model Training approach and Results**
 
 
-###Approach
+### Approach
 The data analysis was conducted with a training and validation split of 80:20
-####Frequency distribution
+#### Frequency distribution
 The frequency distribution plot was used to understand the trading volume for the four stocks. This helped to understand the spread of the various stocks in terms of volume/business thus giving insight on the stock profitability, volatility, long term stocks etc.
 
-####Simple RNN model
+#### Simple RNN model
 We built a simple RNN model to have a basic understanding of the dataset before exploring more complex variants like GRU. We used output shape of (None, 64) and 4480 parameters. We used a Dense layer in Layer2 with 65 parameters and output shape of (None, 64). One neuron was used for binary classification.
 
-####GRU Model
+#### GRU Model
 We built a GRU-based neural network and performed hyperparameter tuning by adjusting units, activation functions, dropout values, and learning rates. After testing different combinations, the best performance came from the model with 128 GRU units, ReLU activation, 0.3 dropout, and a 0.001 learning rate.
 
 ### Data Insights
